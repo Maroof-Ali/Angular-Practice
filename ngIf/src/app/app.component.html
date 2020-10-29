@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>Toggle between numbers and string array using ngIf</h1>
+      <button class="btn btn-primary" (click)="numberArraySelected = !numberArraySelected">Toggle Array</button>
+    </div>
+
+    <ul class="list-group">
+      <div *ngIf = "numberArraySelected == true">
+        <li class="list-group-item"
+        *ngFor="let number of numberArray">
+      {{number}}</li>
+      </div>
+
+      <div *ngIf = "numberArraySelected == false">
+        <li class="list-group-item"
+        *ngFor="let string of stringArray">
+      {{string}}</li>
+      </div>
+
+    </ul>
+
+
+  </div>
+</div>
