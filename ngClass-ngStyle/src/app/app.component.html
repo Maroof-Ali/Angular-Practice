@@ -1,0 +1,14 @@
+<div>
+  
+      <ul>
+        <div>
+          <li 
+          [ngClass] = "{odd : n % 2 !== 0}"
+          [ngStyle] = "{background : n % 2 !==0 ? 'khaki' : 'gold'}"
+          *ngFor = "let n of numbers">
+            {{n}}
+          </li>
+      </div>
+      </ul>
+
+</div>
